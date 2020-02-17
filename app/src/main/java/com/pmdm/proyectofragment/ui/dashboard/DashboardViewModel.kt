@@ -11,7 +11,8 @@ class DashboardViewModel : ViewModel() {
      * con la ventaja de que está asociado a un ciclo de vida (de un fragment o activity)
      */
     private val _text = MutableLiveData<String>().apply {
-        value = "Este es el fragment del dashboard" //modifica el texto del fragment de notificaciones
+        value =
+            "Este es el fragment del dashboard" //modifica el texto del fragment de notificaciones
     }
     val text: LiveData<String> = _text
 }
